@@ -1,0 +1,25 @@
+# LLM API 的端点地址 (Endpoint address for the LLM API)
+base_url: "https://api.deepseek.com/v1"
+
+# 使用的 LLM 模型 (The LLM model to use)
+model: "deepseek-coder"
+
+# LLM API Key (API Key for the LLM platform)
+api_key: ""
+
+# LLM 平台的 API Key (API Key for the LLM platform)
+# 可以通过环境变量 OPENAI_API_KEY, DEEPSEEK_API_KEY, 或 API_KEY 设置
+# Can be set via environment variables OPENAI_API_KEY, DEEPSEEK_API_KEY, or API_KEY
+# api_key: "YOUR_API_KEY"
+
+# 允许执行的工具白名单 (Whitelist of tools allowed to be executed)
+allowed_tools:
+  - "ps"
+  - "find"
+  - "grep"
+  - "wget"
+  - "ss"
+  - "lsof"
+
+# 禁止执行的工具黑名单 (Blacklist of tools forbidden to be executed)
+denied_tools: [] 
